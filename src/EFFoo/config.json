@@ -1,0 +1,7 @@
+﻿{
+	"Data": {
+		"DefaultConnection": {
+			"ConnectionString": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=MyEFFoo;Integrated Security=True"
+		}
+	}
+}

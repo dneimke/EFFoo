@@ -1,0 +1,27 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "EFFoo Console Application",
+  "authors": [ "dneimke" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "dependencies": {
+    "EntityFramework.Core": "7.0.0-*",
+    "EntityFramework.Commands": "7.0.0-*",
+    "EntityFramework.MicrosoftSqlServer": "7.0.0-*",
+    "EntityFramework.Relational": "7.0.0-*",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0-*",
+    "EFFoo2": "1.0.0-*"
+  },
+
+  "commands": {
+    "EFFoo": "EFFoo",
+    "ef" :  "EntityFramework.Commands"
+  },
+
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": { }
+  }
+}
