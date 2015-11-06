@@ -10,8 +10,11 @@ namespace EFFoo.Extensions
     {
         public static void EnsureMigrationsApplied(this IServiceProvider provider)
         {
-            var db = provider.GetService<FooContext>().Database;
-            db.Migrate();
+            var db = provider.GetService<FooContext>();
+            if(db.AllMigrationsApplied() == false)
+            {
+                db.Database.Migrate();
+            }
         }
 
         public static void EnsureDevelopmentData(this IServiceProvider provider)
